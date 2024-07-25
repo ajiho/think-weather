@@ -16,7 +16,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/ajiho/quicktab
+      link: https://github.com/ajiho/think-weather
 
 features:
   - icon: ✨
