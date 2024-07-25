@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'API_key' => 'xxx'
+    'API_KEY' => ''
 ];
