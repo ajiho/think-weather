@@ -7,7 +7,6 @@
       "cghooks add --ignore-lock",
       "cghooks update"
     ],
-    "serve": "php -S localhost:8000 -t docs",
     "lint": "phpcs -p --standard=phpcs.xml --report-file=phpcs-report.txt",
     "fix": "phpcbf -p --standard=phpcs.xml"
   },
@@ -36,7 +35,6 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "topthink/framework": "^6.0 || ^8.0",
-    "lcobucci/jwt": "~4.1.5",
     "ext-json": "*"
   },
   "config": {
@@ -82,7 +80,7 @@
     },
     "think": {
       "config": {
-        "jwt": "src/config.php"
+        "weather": "src/weather.php"
       }
     }
   },
