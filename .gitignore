@@ -1,7 +1,22 @@
 /.idea
 /.vscode
-/vendor
 
-cghooks.lock
+# composer
+/vendor
 composer.lock
+
+
+# 钩子
+cghooks.lock
+
+
+# phpcs生成的错误报告文件
 phpcs-report.txt
+
+# 单元测试缓存
+.phpunit.result.cache
+
+#文档
+docs/node_modules
+docs/**/.vitepress/dist
+docs/**/.vitepress/cache
