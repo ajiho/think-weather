@@ -2,11 +2,8 @@
   "name": "ajiho/think-weather",
   "description": "weather integration for thinkphp6",
   "scripts": {
-    "post-update-cmd": [
-      "cghooks remove",
-      "cghooks add --ignore-lock",
-      "cghooks update"
-    ],
+    "post-install-cmd": "cghooks add --ignore-lock",
+    "post-update-cmd": "cghooks update",
     "lint": "phpcs -p --standard=phpcs.xml --report-file=phpcs-report.txt",
     "fix": "phpcbf -p --standard=phpcs.xml"
   },
@@ -19,7 +16,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "ajiho\\": "src/"
+      "Ajiho\\Weather\\": "src/"
     }
   },
   "authors": [
@@ -42,7 +39,9 @@
   "extra": {
     "hooks": {
       "config": {
-        "stop-on-failure": ["commit-msg"]
+        "stop-on-failure": [
+          "commit-msg"
+        ]
       },
       "pre-commit": [
         "echo committing as $(git config user.name)",
@@ -74,12 +73,14 @@
         "descriptionEndMark": "",
         "bodyRequired": false,
         "bodyWrapWidth": 72,
-        "requiredFooters": ["Signed-off-by"]
+        "requiredFooters": [
+          "Signed-off-by"
+        ]
       }
     },
     "think": {
       "config": {
-        "weather": "src/weather.php"
+        "weather": "src/config.php"
       }
     }
   },
