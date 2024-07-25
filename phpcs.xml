@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Standard">
+
+    <description>A custom coding standard</description>
+
+
+    <!-- 指定基础的编码标准，例如 PSR12 -->
+    <rule ref="PSR12"/>
+
+
+    <!--
+        警告超过100个字符的行，
+        长度超过135个字符的行出错。
+    -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="130"/>
+            <property name="absoluteLineLimit" value="150" />
+        </properties>
+    </rule>
+
+    <!-- 验证的文件 -->
+    <file>src</file>
+
+    <!-- 编码 -->
+    <arg name="encoding" value="utf-8"/>
+    <arg name="colors"/>
+</ruleset>

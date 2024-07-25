@@ -1,0 +1,7 @@
+/.idea
+/.vscode
+/vendor
+
+cghooks.lock
+composer.lock
+phpcs-report.txt
