@@ -1,8 +1,6 @@
 # think-weather
 [![Latest Stable Version](https://img.shields.io/github/v/release/ajiho/think-weather)](https://github.com/ajiho/think-weather/releases)
 [![Total Downloads]](https://packagist.org/packages/ajiho/think-weather)
-[![Latest Stable Version]](https://packagist.org/packages/ajiho/think-weather)
-[![Unstable Version]](https://packagist.org/packages/ajiho/think-weather)
 [![Github License](https://img.shields.io/github/license/ajiho/think-weather.svg)](https://packagist.org/packages/ajiho/think-weather)
 
 
@@ -23,5 +21,4 @@ composer require ajiho/think-weather
 
 
 [Total Downloads]: https://img.shields.io/packagist/dt/ajiho/think-weather.svg?style=flat-square
-[Latest Stable Version]: https://img.shields.io/packagist/v/ajiho/think-weather.svg?style=flat-square
-[Unstable Version]: https://img.shields.io/packagist/vpre/ajiho/think-weather.svg?style=flat-square
+
