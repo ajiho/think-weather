@@ -64,7 +64,8 @@
           "chore",
           "revert",
           "build",
-          "release"
+          "release",
+          "ci"
         ],
         "scopeCase": "kebab",
         "scopeRequired": false,
