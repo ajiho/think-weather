@@ -5,7 +5,8 @@
     "post-install-cmd": "cghooks add --ignore-lock",
     "post-update-cmd": "cghooks update",
     "lint": "phpcs -p --standard=phpcs.xml --report-file=phpcs-report.txt",
-    "fix": "phpcbf -p --standard=phpcs.xml"
+    "fix": "phpcbf -p --standard=phpcs.xml",
+    "test": "phpunit --colors"
   },
   "keywords": [
     "thinkphp6",
@@ -45,7 +46,8 @@
       },
       "pre-commit": [
         "echo committing as $(git config user.name)",
-        "composer lint"
+        "composer lint",
+        "composer test"
       ],
       "commit-msg": [
         "file=`cat $1`",
@@ -88,6 +90,8 @@
   "require-dev": {
     "brainmaestro/composer-git-hooks": "^2.8",
     "ramsey/conventional-commits": "^1.4",
-    "squizlabs/php_codesniffer": "^3.10"
+    "squizlabs/php_codesniffer": "^3.10",
+    "phpunit/phpunit": "^9.6",
+    "mockery/mockery": "^1.6"
   }
 }
