@@ -31,13 +31,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # 如果未启用lastUpdated，则不需要
-      - name: Switch to specified directory
-        run: cd docs
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm # 或者 pnpm / yarn
+          cache-dependency-path: docs
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies  
