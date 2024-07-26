@@ -18,5 +18,5 @@ phpcs-report.txt
 
 #文档
 docs/node_modules
-docs/.vitepress/dist
-docs/.vitepress/cache
+docs/**/.vitepress/dist
+docs/**/.vitepress/cache
