@@ -9,9 +9,9 @@ export default defineConfig({
     title: 'think-weather-文档',
     //网页的语言,研究发现，如果配置了 locales: {root:{lang: 'zh',}}, 那么它会优先使用下面那个配置
     lang: 'zh',
-    base: '/think-weather/',
+    base: '/think-weather/versions/1.0.1/',
     // 输出目录
-    // outDir: '../docs/dist',
+    outDir: '../../latest/public/versions/1.0.1',
     //网页的描述
     description: "基于高德api的php天气组件",
 
