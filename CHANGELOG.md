@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/ajiho/think-weather/compare/think-weather-v1.0.0...think-weather-v2.0.0) (2024-07-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* 有一个重大变化
+* 有一个重大变化
+
+### Features
+
+* 有一个重大变化 ([2ee79ff](https://github.com/ajiho/think-weather/commit/2ee79ff63fe1021c391d754e357f2b3a19c59425))
+* 有一个重大变化 ([0996efe](https://github.com/ajiho/think-weather/commit/0996efecccfa0f64e1f337b4c756b943dd5f9cfd))
+
 ## [1.0.0](https://github.com/ajiho/think-weather/compare/think-weather-v0.1.0...think-weather-v1.0.0) (2024-07-29)
 
 
@@ -29,4 +42,3 @@
 ### Miscellaneous Chores
 
 * 更新ci和文档 ([3a0e9d2](https://github.com/ajiho/think-weather/commit/3a0e9d2d70c130d421eefbcd2878dcb119e5d299))
-
