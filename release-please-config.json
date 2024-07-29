@@ -1,0 +1,11 @@
+{
+    "bump-minor-pre-major": true,
+    "packages": {
+        ".": {
+            "release-type": "php",
+            "pull-request-title-pattern": "chore: release ${version} 🚀",
+            "package-name": "think-weather",
+            "release-as": "0.1.0"
+        }
+    }
+}
