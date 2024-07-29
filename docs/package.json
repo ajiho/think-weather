@@ -1,11 +1,8 @@
 {
   "scripts": {
-    "dev": "vitepress dev latest",
-    "build": "vitepress build latest",
-    "preview": "vitepress preview latest",
-    "dev:1.0.1": "vitepress dev versions/1.0.1",
-    "build:1.0.1": "vitepress build versions/1.0.1",
-    "preview:1.0.1": "vitepress preview versions/1.0.1"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "devDependencies": {
     "sass": "^1.77.8",
