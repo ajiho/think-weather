@@ -17,7 +17,7 @@ composer require ajiho/think-weather
 
 ## 文档
 
-[点此查阅详细文档](https://github.com/ajiho/think-weather/blob/main/docs/README.md)
+[点此查阅详细文档](https://think-weather.vercel.app/)
 
 
 [Total Downloads]: https://img.shields.io/packagist/dt/ajiho/think-weather.svg?style=flat-square

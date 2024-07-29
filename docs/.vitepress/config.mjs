@@ -94,9 +94,19 @@ export default defineConfig({
                 text: '1.0.2',
                 items: [
                     {
-                        text: '1.0.1',
-                        link: 'https://github.com/ajiho/think-weather/releases',
+                        text: '变更日志',
+                        link: 'https://github.com/ajiho/think-weather/blob/main/CHANGELOG.md',
                         target: '_blank',
+                    },
+                    {
+                        text: '贡献指南',
+                        link: 'https://github.com/ajiho/think-weather/blob/main/.github/contributing.md',
+                        target: '_blank',
+                    },
+                    {
+                        items: [
+                            { text: '所有版本', link: '/versions' },
+                        ]
                     },
                 ]
             }
