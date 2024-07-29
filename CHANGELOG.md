@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.0](https://github.com/ajiho/think-weather/compare/think-weather-v0.1.0...think-weather-v1.0.0) (2024-07-29)
+
+
+### Features
+
+* 新增功能123 ([a1a2cef](https://github.com/ajiho/think-weather/commit/a1a2ceff0c785b90f1218439d83ccb52d16e7077))
+* 新增功能123 ([248b657](https://github.com/ajiho/think-weather/commit/248b65724af242e9108bfc0f698e8a64bc82f071))
+
+
+### Bug Fixes
+
+* 修复版本号不会递增 ([a8152e6](https://github.com/ajiho/think-weather/commit/a8152e695e4f00341fb0bda0081872d4921e737b))
+
+
+### Miscellaneous Chores
+
+* release 1.0.0 ([0a8332d](https://github.com/ajiho/think-weather/commit/0a8332d173c6ee139eac8f68b7ff5131ef2277ed))
+
 ## 0.1.0 (2024-07-29)
 
 
@@ -12,10 +30,3 @@
 
 * 更新ci和文档 ([3a0e9d2](https://github.com/ajiho/think-weather/commit/3a0e9d2d70c130d421eefbcd2878dcb119e5d299))
 
-## 1.0.0 (2024-07-25)
-
-
-### Miscellaneous Chores
-
-* 增加ci来自动发版 ([1dea3bc](https://github.com/ajiho/think-weather/commit/1dea3bc8b93515385dfc1f59fa60389ddfe6ea0f))
-* 更新命名空间 ([0b9517a](https://github.com/ajiho/think-weather/commit/0b9517affd0d4e96c5f3e74905c09541a508fb65))
