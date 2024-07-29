@@ -16,7 +16,7 @@
 
 - 在处理 PR 时可以有多个小的提交 - GitHub 可以在合并之前自动压缩它们
 
-- 提交信息必须遵循[常规提交规范](https://conventionalcommits.org)，具体配置哪些[提交信息约定]在此处查看(https://github.com/ajiho/think-weather/blob/main/composer.json#L57)以便可以自动生成变更日志
+- 提交信息必须遵循[常规提交规范](https://conventionalcommits.org)，具体配置哪些[提交信息约定](https://github.com/ajiho/think-weather/blob/main/composer.json#L57)在此处查看，以便可以自动生成变更日志
 
 
 

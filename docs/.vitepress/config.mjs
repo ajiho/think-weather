@@ -99,7 +99,7 @@ export default defineConfig({
                         target: '_blank',
                     },
                     {
-                        text: '贡献指南',
+                        text: '贡献指北',
                         link: 'https://github.com/ajiho/think-weather/blob/main/.github/contributing.md',
                         target: '_blank',
                     },
