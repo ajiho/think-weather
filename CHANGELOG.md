@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.0 (2024-07-29)
+
+
+### Features
+
+* 新增功能1 ([1550b18](https://github.com/ajiho/think-weather/commit/1550b187f86b6b7fd5f11807a8c6d01a8fecd9c2))
+
+
+### Miscellaneous Chores
+
+* 更新ci和文档 ([3a0e9d2](https://github.com/ajiho/think-weather/commit/3a0e9d2d70c130d421eefbcd2878dcb119e5d299))
+
 ## 1.0.0 (2024-07-25)
 
 
