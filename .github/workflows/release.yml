@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
@@ -23,7 +24,6 @@ jobs:
       - name: Make changes
         if: ${{ steps.release.outputs.release_created }}  
         run: |
-          # 这里是你需要进行更改的步骤
           echo "Some changes" > some_file.txt
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
