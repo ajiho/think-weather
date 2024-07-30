@@ -1,5 +1,11 @@
 :root {
 
+
+
+    --color-1: #6fb737;
+    --color-2: #0c8432;
+
+    // 这里是md语法`foo bar` 样式设置，模仿的是csdn的code的配色
     --vp-code-bg: #f9f2f4;
     --vp-code-color: #c7254e;
 
@@ -9,19 +15,24 @@
     --vp-home-hero-name-background: transparent;
     */
     --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: linear-gradient(120deg, #6fb737 30%, #0c8432);
+    --vp-home-hero-name-background: linear-gradient(120deg, var(--color-1) 30%, var(--color-2));
     /*
     用于设置首页右边的大logo的背景阴影效果
     --vp-home-hero-image-background-image: none;
   --vp-home-hero-image-filter: none;
     */
-    --vp-home-hero-image-background-image: linear-gradient(135deg, #6fb737 10%, #0c8432 100%);
+    --vp-home-hero-image-background-image: linear-gradient(135deg, var(--color-1) 10%, var(--color-2) 100%);
     --vp-home-hero-image-filter: blur(150px);
 
 
-    --vp-c-brand-1: #6fb737;
-    --vp-button-brand-bg: #6fb737;
-    --vp-button-brand-hover-bg: #0c8432;
+    --vp-c-brand-1: var(--color-1);
+    --vp-button-brand-bg: var(--color-1);
+    --vp-button-brand-hover-bg: var(--color-2);
+    --vp-c-brand-2: var(--color-2);
+
+
+
+    // --vp-button-alt-text: #e810cb;
 
     /*--vp-c-brand: #2bc0ac;*/
     --vp-sidebar-bg-color: #fff;
@@ -100,7 +111,7 @@ html[lang="en"] {
 // 代码高亮
 
 
-.vp-doc .demo-preview [class*='language-'] code{
-    color:unset;
+.vp-doc .demo-preview [class*='language-'] code {
+    color: unset;
     padding: 0;
 }
