@@ -29,6 +29,7 @@ jobs:
         with:
           node-version: 18
           cache: npm # 或者 pnpm / yarn
+          cache-dependency-path: docs
       - name: Docs Preview
         if: ${{ steps.release.outputs.release_created }}  
         run: |
