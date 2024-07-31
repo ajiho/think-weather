@@ -1,4 +1,7 @@
 name: Release
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 on:
   push:
@@ -21,14 +24,26 @@ jobs:
           manifest-file: .release-please-manifest.json
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Make changes
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm # 或者 pnpm / yarn
+      - name: Docs Preview
         if: ${{ steps.release.outputs.release_created }}  
         run: |
-          echo "Some changes" > some_file.txt
+          npm install --global vercel@canary
+          vercel pull --cwd=docs --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+          vercel build --cwd=docs --token=${{ secrets.VERCEL_TOKEN }}
+          vercel deploy --cwd=docs --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Versions Push
+        if: ${{ steps.release.outputs.release_created }}  
+        run: |
+          echo "Some changes" > docs/some_file.txt
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m "Automated commit from GitHub Actions"
+          git commit -m "chore: update versions"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
