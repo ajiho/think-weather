@@ -24,6 +24,7 @@ jobs:
           manifest-file: .release-please-manifest.json
       - name: Checkout
         uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -41,7 +42,8 @@ jobs:
           echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
         working-directory: ./docs
       - name: Output Deployment URL
-        run: "echo ${{ env.DEPLOY_URL }} ${{ steps.release.outputs.major }}"  
+        run: echo ${{ env.DEPLOY_URL }} ${{ steps.release.outputs.major }}
+        if: ${{ steps.release.outputs.release_created }}    
       - name: Versions Push
         if: ${{ steps.release.outputs.release_created }}  
         run: |
