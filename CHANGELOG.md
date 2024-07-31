@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.6.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.5.0...think-weather-v3.6.0) (2024-07-31)
+
+
+### Features
+
+* 新增feat ([31ba591](https://github.com/ajiho/think-weather/commit/31ba591ae78122f39647083eb0f2f8fe12bbec32))
+
+
+### Miscellaneous Chores
+
+* update versions ([a1a7c76](https://github.com/ajiho/think-weather/commit/a1a7c76f619835a3015b6cd369bb7ea91704aa7d))
+
 ## [3.5.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.4.2...think-weather-v3.5.0) (2024-07-31)
 
 
