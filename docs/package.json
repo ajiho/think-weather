@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "vitepress dev --open",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "test": "node version.js"
   },
   "devDependencies": {
     "sass": "^1.77.8",
