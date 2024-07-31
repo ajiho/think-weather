@@ -41,7 +41,7 @@ jobs:
           echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
         working-directory: ./docs
       - name: Output Deployment URL
-        run: echo "Deployment URL: ${{ env.DEPLOY_URL }} ${{ steps.release.outputs.major }}"  
+        run: "echo ${{ env.DEPLOY_URL }} ${{ steps.release.outputs.major }}"  
       - name: Versions Push
         if: ${{ steps.release.outputs.release_created }}  
         run: |
