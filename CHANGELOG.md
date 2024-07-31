@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.5.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.4.2...think-weather-v3.5.0) (2024-07-31)
+
+
+### Features
+
+* 在release中文档预览 ([4ddd11b](https://github.com/ajiho/think-weather/commit/4ddd11b1a126837d1d108c500dbec73b8c2ea2cd))
+
+
+### Bug Fixes
+
+* Setup Node找不到锁文件的问题 ([015d2da](https://github.com/ajiho/think-weather/commit/015d2da3b043d595d60d240754f15e3ab3aec17d))
+* Setup Node找不到锁文件的问题 ([99b9f2e](https://github.com/ajiho/think-weather/commit/99b9f2e90d89c87055bec40f2b74a6bcef89d5e8))
+* Setup Node找不到锁文件的问题 ([60028c5](https://github.com/ajiho/think-weather/commit/60028c5cec88521e851260e545396bac8e3a7861))
+
 ## [3.4.2](https://github.com/ajiho/think-weather/compare/think-weather-v3.4.1...think-weather-v3.4.2) (2024-07-30)
 
 
