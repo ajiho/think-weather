@@ -32,10 +32,11 @@ jobs:
       - name: Docs Preview
         if: ${{ steps.release.outputs.release_created }}  
         run: |
+          cd docs
           npm install --global vercel@canary
-          vercel pull --cwd=docs --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-          vercel build --cwd=docs --token=${{ secrets.VERCEL_TOKEN }}
-          vercel deploy --cwd=docs --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+          vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+          vercel build --token=${{ secrets.VERCEL_TOKEN }}
+          vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
       - name: Versions Push
         if: ${{ steps.release.outputs.release_created }}  
         run: |
