@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.6.1](https://github.com/ajiho/think-weather/compare/think-weather-v3.6.0...think-weather-v3.6.1) (2024-07-31)
+
+
+### Bug Fixes
+
+* 小修复 ([f2b3b91](https://github.com/ajiho/think-weather/commit/f2b3b91ad0e7f0992203143e33e8c70bd1f56d05))
+
 ## [3.6.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.5.0...think-weather-v3.6.0) (2024-07-31)
 
 
