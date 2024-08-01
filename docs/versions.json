@@ -1,8 +1,9 @@
 {
-  "currently": "3.9.0",
+  "currently": "3.9.1",
   "archived": {
     "3.7.0": "https://think-weather-a1ogaxrgx-ajihos-projects.vercel.app",
     "3.8.0": "https://think-weather-7l1444co2-ajihos-projects.vercel.app",
-    "3.9.0": "https://think-weather-rmbkjb3us-ajihos-projects.vercel.app"
+    "3.9.0": "https://think-weather-rmbkjb3us-ajihos-projects.vercel.app",
+    "3.9.1": "https://think-weather-a74ggnmu9-ajihos-projects.vercel.app"
   }
 }
