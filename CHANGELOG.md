@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.9.1](https://github.com/ajiho/think-weather/compare/think-weather-v3.9.0...think-weather-v3.9.1) (2024-08-01)
+
+
+### Bug Fixes
+
+* 错误的version链接 ([b61d67f](https://github.com/ajiho/think-weather/commit/b61d67fa7a5ad8cbb47bccb6c39035c143457b68))
+
 ## [3.9.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.8.0...think-weather-v3.9.0) (2024-08-01)
 
 
