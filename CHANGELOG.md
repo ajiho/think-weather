@@ -1,5 +1,23 @@
 # Changelog
 
+## [3.7.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.6.0...think-weather-v3.7.0) (2024-08-01)
+
+
+### Features
+
+* ci中记录vercel的部署地址 ([6517b76](https://github.com/ajiho/think-weather/commit/6517b760d4c294ca83f455a5552f8b4c47760dc1))
+
+
+### Bug Fixes
+
+* 小修复 ([f2b3b91](https://github.com/ajiho/think-weather/commit/f2b3b91ad0e7f0992203143e33e8c70bd1f56d05))
+* 重新提交ci ([acd1186](https://github.com/ajiho/think-weather/commit/acd1186fa67f83196ee6863fbcef9ea31b2821ee))
+
+
+### Miscellaneous Chores
+
+* release 3.6.0 🚀 ([52f43f8](https://github.com/ajiho/think-weather/commit/52f43f8b12d3da192ab9c9aed24680311e55b19a))
+
 ## [3.6.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.5.0...think-weather-v3.6.0) (2024-08-01)
 
 
