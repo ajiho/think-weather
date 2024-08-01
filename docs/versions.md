@@ -15,7 +15,7 @@ import jsonData from './versions.json';
   <tr v-for="(value, key, index) in jsonData" :key="index">
     <td>{{ key }}</td>
     <td><a :href="value">文档地址</a></td>
-    <td> <a href="https://github.com/ajiho/think-weather/releases/tag/v0.0.1">发布日志</a></td>
+    <td> <a :href="`https://github.com/ajiho/think-weather/releases/tag/think-weather-v${{key}}`">发布日志</a></td>
   </tr>
 </table>
 
