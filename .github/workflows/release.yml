@@ -41,9 +41,17 @@ jobs:
           DEPLOY_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
           echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
         working-directory: ./docs
-      - name: Output Deployment URL
-        run: echo ${{ env.DEPLOY_URL }} ${{ steps.release.outputs.major }}
-        if: ${{ steps.release.outputs.release_created }}    
+      - name: Write to docs/versions. json
+        run: |
+          node -e "
+          const fs = require('fs');
+          const data = fs.readFileSync('versions.json', 'utf8');
+          const versionLinks = JSON.parse(data);
+          versionLinks['${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}'] = '${{ env.DEPLOY_URL }}';
+          fs.writeFileSync('versions.json', JSON.stringify(versionLinks, null, 2), 'utf8');
+          "
+        if: ${{ steps.release.outputs.release_created }}
+        working-directory: ./docs         
       - name: Versions Push
         if: ${{ steps.release.outputs.release_created }}  
         run: |
