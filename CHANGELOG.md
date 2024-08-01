@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.9.2](https://github.com/ajiho/think-weather/compare/think-weather-v3.9.1...think-weather-v3.9.2) (2024-08-01)
+
+
+### Bug Fixes
+
+* 让文档点击后打开一个新的窗口 ([9d7c13d](https://github.com/ajiho/think-weather/commit/9d7c13d515ed6ce11b268b85a7a6bc1827cbe7e0))
+
 ## [3.9.1](https://github.com/ajiho/think-weather/compare/think-weather-v3.9.0...think-weather-v3.9.1) (2024-08-01)
 
 
