@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.9.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.8.0...think-weather-v3.9.0) (2024-08-01)
+
+
+### Features
+
+* 更改部署到vercel为生产模式 ([52f6cee](https://github.com/ajiho/think-weather/commit/52f6cee8729718a9fd545f8477d92009d5bc455d))
+* 自动更新版本号 ([71fc33a](https://github.com/ajiho/think-weather/commit/71fc33a471b3d0776669f711107882e29b81e555))
+
+
+### Miscellaneous Chores
+
+* update versions ([ac97d53](https://github.com/ajiho/think-weather/commit/ac97d53abb25f4329654147e2660d9087c9f9962))
+
 ## [3.8.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.7.0...think-weather-v3.8.0) (2024-08-01)
 
 
