@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
+import jsonData from '../versions.json';
+
 
 const year = new Date().getFullYear();
 
@@ -91,7 +93,7 @@ export default defineConfig({
             { text: '赞助', link: '/sponsor' },
             { text: '迁移', link: '/migrate' },
             {
-                text: '1.0.2',
+                text: jsonData.currently,//版本号,请勿手动更改，该版本号会在release任务中自动更新
                 items: [
                     {
                         text: '变更日志',

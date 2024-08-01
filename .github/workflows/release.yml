@@ -32,7 +32,18 @@ jobs:
           cache: npm # 或者 pnpm / yarn
           cache-dependency-path: docs
         if: ${{ steps.release.outputs.release_created }}
-      - name: Docs Preview
+      - name: Write the current version number to docs/versions.json
+        if: ${{ steps.release.outputs.release_created }}  
+        run: |
+          node -e "
+          const fs = require('fs');
+          const data = fs.readFileSync('versions.json', 'utf8');
+          const versionLinks = JSON.parse(data);
+          versionLinks.currently = '${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}';
+          fs.writeFileSync('versions.json', JSON.stringify(versionLinks, null, 2), 'utf8');
+          "
+        working-directory: ./docs
+      - name: Deploy docs and obtain the deployed URL
         if: ${{ steps.release.outputs.release_created }}  
         run: |
           npm install --global vercel@canary
@@ -41,24 +52,24 @@ jobs:
           DEPLOY_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
           echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
         working-directory: ./docs
-      - name: Write to docs/versions. json
+      - name: Write the URL of Vercel deployment to the archived property of docs/versions.json
         run: |
           node -e "
           const fs = require('fs');
           const data = fs.readFileSync('versions.json', 'utf8');
           const versionLinks = JSON.parse(data);
-          versionLinks['${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}'] = '${{ env.DEPLOY_URL }}';
+          versionLinks['archived']['${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}'] = '${{ env.DEPLOY_URL }}';
           fs.writeFileSync('versions.json', JSON.stringify(versionLinks, null, 2), 'utf8');
           "
         if: ${{ steps.release.outputs.release_created }}
         working-directory: ./docs         
-      - name: Versions Push
+      - name: Submit docs/versions.json to the repository
         if: ${{ steps.release.outputs.release_created }}  
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
-          git commit -m "chore: update versions"
+          git commit -m "docs: update versions"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
