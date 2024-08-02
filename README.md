@@ -44,3 +44,4 @@ composer require ajiho/think-weather
 [Total Downloads]: https://img.shields.io/packagist/dt/ajiho/think-weather.svg?style=flat-square
 
 
+1
