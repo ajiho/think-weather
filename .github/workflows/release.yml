@@ -22,8 +22,6 @@ jobs:
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
-      - name: Output INFO
-        run: echo ${{ steps.release.outputs.release_created }} ${{ steps.release.outputs.paths_released }} ${{ steps.release.outputs.prs_created }} ${{ steps.release.outputs.pr }} ${{ steps.release.outputs.prs }}
       - name: Checkout
         uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
@@ -45,6 +43,11 @@ jobs:
           fs.writeFileSync('versions.json', JSON.stringify(versionLinks, null, 2), 'utf8');
           "
         working-directory: ./docs
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v2
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          files: CHANGELOG.md  
       - name: Deploy docs and obtain the deployed URL
         if: ${{ steps.release.outputs.release_created }}  
         run: |
