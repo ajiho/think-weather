@@ -47,7 +47,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: ${{ steps.release.outputs.release_created }} && startsWith(github.ref, 'refs/tags/')
         with:
-          files: CHANGELOG.md  
+          files: CHANGELOG.md
+          tag_name: 123  
       - name: Deploy docs and obtain the deployed URL
         if: ${{ steps.release.outputs.release_created }}  
         run: |
