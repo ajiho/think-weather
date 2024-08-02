@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.5](https://github.com/ajiho/think-weather/compare/think-weather-v3.11.4...think-weather-v3.11.5) (2024-08-02)
+
+
+### Bug Fixes
+
+* fix9 ([c6f5e6a](https://github.com/ajiho/think-weather/commit/c6f5e6afbb750f086adeb5f749e0adcbfad2450b))
+
 ## [3.11.4](https://github.com/ajiho/think-weather/compare/think-weather-v3.11.3...think-weather-v3.11.4) (2024-08-02)
 
 
