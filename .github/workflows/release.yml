@@ -43,9 +43,12 @@ jobs:
           fs.writeFileSync('versions.json', JSON.stringify(versionLinks, null, 2), 'utf8');
           "
         working-directory: ./docs
-      - name: Output Info
-        run: |
-          echo ${{ steps.release.outputs.tag_name }}
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: CHANGELOG.md
+          tag_name: ${{ steps.release.outputs.tag_name }}
+        if: ${{ steps.release.outputs.release_created }}
       - name: Deploy docs and obtain the deployed URL
         if: ${{ steps.release.outputs.release_created }}  
         run: |
