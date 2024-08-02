@@ -45,7 +45,7 @@ jobs:
         working-directory: ./docs
       - name: Upload release assets
         uses: softprops/action-gh-release@v2
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.release_created }} && startsWith(github.ref, 'refs/tags/')
         with:
           files: CHANGELOG.md  
       - name: Deploy docs and obtain the deployed URL
