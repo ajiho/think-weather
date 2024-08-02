@@ -22,6 +22,8 @@ jobs:
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+      - name: Output INFO
+        run: echo ${{ steps.release.outputs.release_created }} ${{ steps.release.outputs.paths_released }} ${{ steps.release.outputs.prs_created }} ${{ steps.release.outputs.pr }} ${{ steps.release.outputs.prs }}
       - name: Checkout
         uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
