@@ -4,7 +4,8 @@
         ".": {
             "release-type": "php",
             "pull-request-title-pattern": "chore: release ${version} 🚀",
-            "package-name": "think-weather"
+            "package-name": "think-weather",
+            "skip-github-release":true
         }
     }
 }
