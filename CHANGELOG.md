@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.10.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.9.2...think-weather-v3.10.0) (2024-08-02)
+
+
+### Features
+
+* skip-gh-release ([a715332](https://github.com/ajiho/think-weather/commit/a715332d54c398bf3cb4a8eeb00253041fc171e8))
+
 ## [3.9.2](https://github.com/ajiho/think-weather/compare/think-weather-v3.9.1...think-weather-v3.9.2) (2024-08-01)
 
 
