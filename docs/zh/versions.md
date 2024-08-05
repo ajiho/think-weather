@@ -5,7 +5,7 @@
 
 
 <script setup>
-import jsonData from './versions.json';
+import jsonData from '../versions.json';
 
 </script>
 
