@@ -100,11 +100,11 @@
 
 
 // 复制代码的提示设置
-html[lang="zh"] {
+html[lang="zh-Hans"] {
     --vp-code-copy-copied-text-content: '已复制'
 }
 
-html[lang="en"] {
+html[lang="en-US"] {
     --vp-code-copy-copied-text-content: 'Copied!'
 }
 
