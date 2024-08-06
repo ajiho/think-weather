@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.12.0](https://github.com/ajiho/think-weather/compare/think-weather-v3.11.5...think-weather-v3.12.0) (2024-08-05)
+
+
+### Features
+
+* 文档增加多语言系统 ([fcfa87d](https://github.com/ajiho/think-weather/commit/fcfa87de3038f9923ab4237fded172e1bff64cc7))
+
 ## [3.11.5](https://github.com/ajiho/think-weather/compare/think-weather-v3.11.4...think-weather-v3.11.5) (2024-08-02)
 
 
