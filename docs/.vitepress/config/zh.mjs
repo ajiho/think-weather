@@ -7,6 +7,7 @@ export const zh = defineConfig({
     description: "基于高德api的php天气组件",
 
     themeConfig: {
+
         nav: nav(),
 
         sidebar: {
@@ -18,7 +19,8 @@ export const zh = defineConfig({
         },
 
         editLink: {
-            pattern: "https://github.com/ajiho/think-weather/edit/main/docs/:path",
+            pattern:
+                "https://github.com/ajiho/think-weather/edit/main/docs/:path",
             text: "在 GitHub 上编辑此页面",
         },
 
@@ -123,6 +125,16 @@ function sidebarApi() {
     ];
 }
 
+export const markdown = {
+    container: {
+        tipLabel: "提示",
+        warningLabel: "警告",
+        dangerLabel: "危险",
+        infoLabel: "信息",
+        detailsLabel: "详细信息",
+    },
+};
+
 export const search = {
     zh: {
         placeholder: "搜索文档",
@@ -157,9 +169,9 @@ export const search = {
                     searchByText: "搜索提供者",
                 },
 
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '重置搜索',
-                displayDetails: '显示详情视图',
+                noResultsText: "无法找到相关结果",
+                resetButtonTitle: "重置搜索",
+                displayDetails: "显示详情视图",
                 noResultsScreen: {
                     noResultsText: "无法找到相关结果",
                     suggestedQueryText: "你可以尝试查询",
