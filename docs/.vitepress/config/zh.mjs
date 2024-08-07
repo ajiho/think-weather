@@ -7,7 +7,6 @@ export const zh = defineConfig({
     description: "基于高德api的php天气组件",
 
     themeConfig: {
-
         nav: nav(),
 
         sidebar: {
@@ -36,6 +35,7 @@ export const zh = defineConfig({
 
         outline: {
             label: "页面导航",
+            level: "deep",
         },
 
         lastUpdated: {

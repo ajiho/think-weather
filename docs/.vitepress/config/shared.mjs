@@ -44,8 +44,6 @@ export const shared = defineConfig({
             { icon: "github", link: "https://github.com/ajiho/think-weather" },
         ],
 
-        outline: "deep",
-
         search: {
             provider: "local",
             options: {

@@ -27,6 +27,10 @@ export const en = defineConfig({
             message: "Released under the MIT License.",
             copyright: `Copyright © ${new Date().getFullYear()} ajiho`,
         },
+
+        outline: {
+            level: "deep",
+        },
     },
 });
 
