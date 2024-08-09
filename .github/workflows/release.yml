@@ -8,7 +8,6 @@ on:
     branches:
       - main
 
-
 permissions:
   contents: write
   pull-requests: write
@@ -33,7 +32,7 @@ jobs:
           cache-dependency-path: docs
         if: ${{ steps.release.outputs.release_created }}
       - name: Write the current version number to docs/versions.json
-        if: ${{ steps.release.outputs.release_created }}  
+        if: ${{ steps.release.outputs.release_created }}
         run: |
           node -e "
           const fs = require('fs');
@@ -50,7 +49,7 @@ jobs:
           tag_name: ${{ steps.release.outputs.tag_name }}
         if: ${{ steps.release.outputs.release_created }}
       - name: Deploy docs and obtain the deployed URL
-        if: ${{ steps.release.outputs.release_created }}  
+        if: ${{ steps.release.outputs.release_created }}
         run: |
           npm install --global vercel@canary
           vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
@@ -68,9 +67,9 @@ jobs:
           fs.writeFileSync('versions.json', JSON.stringify(versionLinks, null, 2), 'utf8');
           "
         if: ${{ steps.release.outputs.release_created }}
-        working-directory: ./docs         
+        working-directory: ./docs
       - name: Submit docs/versions.json to the repository
-        if: ${{ steps.release.outputs.release_created }}  
+        if: ${{ steps.release.outputs.release_created }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'

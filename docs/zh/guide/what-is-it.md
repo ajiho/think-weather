@@ -7,6 +7,8 @@
 `think-weather`是一个基于thinkphp封装的一个天气组件
 
 
+这是2.x分支的
+
 
 ## markdown拓展语法
 
